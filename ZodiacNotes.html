@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Zodiac Notes</title>
+      <script>
+        function fortune()
+        {
+             var month = 5;
+             var day = 12;
+
+             month = document.getElementById('monthid').value;
+
+             day = document.getElementById('dayid').value;
+
+             //ARies March 21 April 19
+             if((month == 3 &&  (day <= 21 && day >= 30)) || (month == 4 && (day >= 1  && day <= 20)))
+             {
+                    document.getElementById("message").innerHTML = "Aries: Eager, Dyanmic, Quick, and Competitive";
+                    document.getElementById("symbol").innerHTML = "<img src = '1.webp'>";
+             }
+              //Taurus (4/21 - 5/20)
+             if((month == 4 &&  (day <= 21 && day >= 30)) || (month == 5 && (day >= 1  && day <= 20)))
+             {
+                    document.getElementById("message").innerHTML = "Taurus: Strong, Dependable, Sensual, and Creative";
+                    document.getElementById("symbol").innerHTML = "<img src = '2.webp'>";
+             }
+             if((month == 5 &&  (day <= 21 && day >= 30)) || (month == 6 && (day >= 1  && day <= 20)))
+             {
+                    document.getElementById("message").innerHTML = "Gemini: Versatile, Expressive, Curious, and Kind";
+                    document.getElementById("symbol").innerHTML = "<img src = '3.webp'>";
+             }
+             if((month == 6 &&  (day <= 21 && day >= 30)) || (month == 7 && (day >= 1  && day <= 22)))
+             {
+                    document.getElementById("message").innerHTML = "Cancer: Intuitive, Sentimental, Compassionate, and Protective";
+                    document.getElementById("symbol").innerHTML = "<img src = '4.webp'>";
+             }
+             if((month == 7 &&  (day <= 23 && day >= 30)) || (month == 8 && (day >= 1  && day <= 22)))
+             {
+                    document.getElementById("message").innerHTML = "Leo: Dramatic, Outgoing, Fiery, and Self-assured";
+                    document.getElementById("symbol").innerHTML = "<img src = '5.webp'>";
+             }
+             if((month == 8 &&  (day <= 23 && day >= 30)) || (month == 9 && (day >= 1  && day <= 22)))
+             {
+                    document.getElementById("message").innerHTML = "Virgo: Practical, Loyal, Gentle, and Analytical";
+                    document.getElementById("symbol").innerHTML = "<img src = '6.webp'>";
+             }
+             if((month == 9 &&  (day <= 23 && day >= 30)) || (month == 10 && (day >= 1  && day <= 22)))
+             {
+                    document.getElementById("message").innerHTML = "Libra: Social, Fair-minded, Diplomatic, and Gracious";
+                    document.getElementById("symbol").innerHTML = "<img src = '7.webp'>";
+             }
+             if((month == 10 &&  (day <= 23 && day >= 30)) || (month == 11 && (day >= 1  && day <= 22)))
+             {
+                    document.getElementById("message").innerHTML = "Scorpio: Passionate, Stubborn, Resourceful, and Brave";
+                    document.getElementById("symbol").innerHTML = "<img src = '8.webp'>";
+             }
+             if((month == 11 &&  (day <= 23 && day >= 30)) || (month == 12 && (day >= 1  && day <= 21)))
+             {
+                    document.getElementById("message").innerHTML = "Sagittarius: Extroverted, Optimistic, Funny, and Generous";
+                    document.getElementById("symbol").innerHTML = "<img src = '9.webp'>";
+             }
+             if((month == 12 &&  (day <= 22 && day >= 30)) || (month == 1 && (day >= 1  && day <= 19)))
+             {
+                    document.getElementById("message").innerHTML = "Capricorn: Serious, Independent, Disciplined, and Tenacious";
+                    document.getElementById("symbol").innerHTML = "<img src = '10.webp'>";
+             }
+             if((month == 1 &&  (day <= 20 && day >= 30)) || (month == 2 && (day >= 1  && day <= 19)))
+             {
+                    document.getElementById("message").innerHTML = "Aquarius: Deep, Imaginative, Original, and Uncompromising";
+                    document.getElementById("symbol").innerHTML = "<img src = '11.webp'>";
+             }
+             if((month == 2 &&  (day <= 20 && day >= 30)) || (month == 3 && (day >= 1  && day <= 20)))
+             {
+                    document.getElementById("message").innerHTML = "Pisces: Affectionate, Empathetic, Wise, and Artistic";
+                    document.getElementById("symbol").innerHTML = "<img src = '12.webp'>";
+             }
+
+        }
+      </script>
+
+      <style>
+      body {
+        background-image: url(wp2742875.jpg);
+        color: yellow;
+        font-family: Lucida Sans Unicode;
+        font-size: 26px
+      }
+      </style>
+   </head>
+
+   <body>
+     <h2>Horoscope</h2>
+
+     <label> Please Enter Month: </label>
+     <input type = "text" id ="monthid">
+
+     <label> Please Enter Day: </label>
+     <input type = "text" id ="dayid">
+
+      <input type = "button" value = "ENTER" onclick = "fortune()">
+      <span id = "symbol"></span>
+      <span id = "message"></span>
+
+   </body>
+</html>
